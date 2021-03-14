@@ -4,6 +4,20 @@
   <hr class="hr--small">
 </header>
 
-<div class="rte">
-  {{ page.content }}
+
+<div class="grid">
+  <div class="grid__item large--four-fifths push--large--one-tenth">
+    <div class="rte rte--nomargin">
+      {{ page.content }}
+    </div>
+  </div>
+</div>
+
+
+<div class="grid">
+  <div class="grid__item large--four-fifths push--large--one-tenth">
+    <div class="rte rte--nomargin">
+        {% section 'page-template-01' %}
+    </div>
+  </div>
 </div>

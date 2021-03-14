@@ -29,7 +29,12 @@
   {{ 'timber.scss.css' | asset_url | stylesheet_tag }}
   {{ 'theme.scss.css' | asset_url | stylesheet_tag }}
 
-  <!-- Sections ================================================== -->
+
+
+
+
+
+ <!-- Sections ================================================== -->
   <script>
     window.theme = window.theme || {};
     theme.strings = {
@@ -69,6 +74,12 @@
   {% if request.page_type contains 'customers/' %}
     {{ 'shopify_common.js' | shopify_asset_url | script_tag }}
   {% endif %}
+
+
+
+  <!-- Accessibility Assistant App 
+   ================================================== -->
+   <script src="https://accessibility-assistant.cartcoders.com/storage/shop_js/G8YPULFGUW08PLJE.js"></script>
 
 </head>
 
@@ -112,6 +123,7 @@
     {% section 'footer' %}
 
   </div>
+
 
   {% comment %}
     Template-specific js
