@@ -29,9 +29,14 @@
   {%- endstyle -%}
 {%- endif -%}
 
-<div id="HeroWrapper-{{ section.id }}"{% if section.settings.home_hero_height == 'adapt' %} class="hero--adapt"{% endif %} data-section-id="{{ section.id }}" data-section-type="slideshow-section">
+<div 
+  id="HeroWrapper-{{ section.id }}"{% if section.settings.home_hero_height == 'adapt' %} class="hero--adapt"{% endif %} 
+  data-section-id="{{ section.id }}" 
+  data-section-type="slideshow-section"
+>
   {%- if section.blocks.size > 0 -%}
-    <div class="hero-{{ section.id }} hero"
+    <div style="height:75vh;"
+         class="hero-{{ section.id }} hero"
          id="Hero-{{ section.id }}"
          aria-label="slideshow"
          aria-describedby="a11y-slideshow-info"
@@ -66,6 +71,7 @@
           #HeroWrapper-{{ section.id }} .slide--{{ block.id }} .hero__text-wrap {
             text-align: {{ block.settings.text_alignment }}
           }
+          
         {%- endstyle -%}
         {%- comment -%}
           Apply a color overlay on a per-slide basis. The overlay is defined by
@@ -194,6 +200,9 @@
     {%- endif -%}
   {%- endif -%}
 </div>
+
+
+
 
 {% schema %}
 {
