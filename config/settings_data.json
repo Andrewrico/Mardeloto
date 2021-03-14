@@ -28,10 +28,10 @@
     "type_base_italize_titles": true,
     "cart_type": "drawer",
     "cart_notes_enable": true,
-    "social_facebook_link": "",
-    "social_twitter_link": "",
-    "social_pinterest_link": "",
-    "social_instagram_link": "",
+    "social_facebook_link": "https:\/\/www.facebook.com\/shopify",
+    "social_twitter_link": "https:\/\/twitter.com\/shopify",
+    "social_pinterest_link": "https:\/\/www.pinterest.com\/shopify",
+    "social_instagram_link": "https:\/\/instagram.com\/shopify",
     "social_snapchat_link": "",
     "social_google_plus_link": "",
     "social_tumblr_link": "",
@@ -71,33 +71,35 @@
           "1495823280244": {
             "type": "slide",
             "settings": {
-              "image": "shopify:\/\/shop_images\/banner-02.jpg",
+              "image": "shopify:\/\/shop_images\/modern-venus.jpg",
               "image_position": "center center",
               "image_overlay": true,
-              "image_overlay_opacity": 12,
+              "image_overlay_opacity": 25,
               "text_alignment": "left",
-              "slide_heading": "The Latest Collections",
+              "slide_heading": "The Latest Trends",
               "slide_subheading": "",
               "button_label": "Shop now",
+              "button_link": "shopify:\/\/collections",
               "slide_text_color": "#ffffff",
-              "slide_button_label_color": "#003b34",
-              "slide_button_background_color": "#84d1b2"
+              "slide_button_label_color": "#000000",
+              "slide_button_background_color": "#ffffff"
             }
           },
           "06b60a2b-ab9c-4f30-9aef-296f43236cf1": {
             "type": "slide",
             "settings": {
-              "image": "shopify:\/\/shop_images\/banner-01.jpg",
-              "image_position": "center top",
+              "image": "shopify:\/\/shop_images\/bikini-model-lays-on-steps.jpg",
+              "image_position": "center bottom",
               "image_overlay": true,
-              "image_overlay_opacity": 25,
+              "image_overlay_opacity": 44,
               "text_alignment": "left",
-              "slide_heading": "The Latest Collections",
+              "slide_heading": "MARDELOTO",
               "slide_subheading": "",
               "button_label": "Shop now",
+              "button_link": "shopify:\/\/collections",
               "slide_text_color": "#ffffff",
-              "slide_button_label_color": "#ffffff",
-              "slide_button_background_color": "#1f2021"
+              "slide_button_label_color": "#0a0909",
+              "slide_button_background_color": "#f7f7f7"
             }
           }
         },
@@ -139,8 +141,9 @@
           "drawer_bottom_link_list": "",
           "drawer_search_enable": false,
           "show_announcement": true,
-          "home_page_only": true,
+          "home_page_only": false,
           "text": "50% OFF Only Today, Hurry Up!",
+          "link": "shopify:\/\/products\/heart-cheeky-brazilian-bikini-bottom",
           "color_bg": "#050505",
           "color_text": "#ffffff"
         }
@@ -157,23 +160,25 @@
       "collection-template": {
         "type": "collection-template",
         "settings": {
-          "collection_tags_enable": false,
+          "show_collection_image": true,
+          "collection_sort_enable": true,
+          "collection_tags_enable": true,
           "collection_products_grid": "grid",
-          "product_vendor_enable": false
+          "product_vendor_enable": true
         }
       },
       "product-template": {
         "type": "product-template",
         "settings": {
-          "product_vendor_enable": false,
+          "product_vendor_enable": true,
           "social_sharing_products": true,
-          "quantity_enabled": false,
-          "product_selector": "radio",
+          "quantity_enabled": true,
+          "product_selector": "select",
           "enable_payment_button": true,
           "add_to_cart_button_size": "small",
-          "media_layout": "stacked",
-          "enable_image_zoom": false,
-          "enable_video_looping": false
+          "media_layout": "thumbnails",
+          "enable_image_zoom": true,
+          "enable_video_looping": true
         }
       },
       "1615254699d28e793e": {
@@ -228,18 +233,55 @@
       "1615652108729d83a2": {
         "type": "featured-row",
         "settings": {
+          "image": "shopify:\/\/shop_images\/bikini-girls.png",
           "layout": "right",
           "title": "ABOUT MARDELOTO",
           "text": "<p>Mardeloto - an international online store, where is your destination for fashion forward swimsuits, chic beachwear style, pool party outfit and for an amazing vacation closet.<\/p>",
           "button_label": "LEARN MORE ABOUT US",
           "button_link": "shopify:\/\/pages\/faq"
         }
+      },
+      "1615683283b307b0cf": {
+        "type": "advanced-content",
+        "blocks": {
+          "1615683283b307b0cf-0": {
+            "type": "html",
+            "settings": {
+              "code": "<br>",
+              "width": "100%",
+              "alignment": "center"
+            }
+          }
+        },
+        "block_order": [
+          "1615683283b307b0cf-0"
+        ],
+        "settings": {}
+      },
+      "16156833703d113e65": {
+        "type": "advanced-content",
+        "blocks": {
+          "16156833703d113e65-0": {
+            "type": "html",
+            "settings": {
+              "code": "<br>",
+              "width": "100%",
+              "alignment": "center"
+            }
+          }
+        },
+        "block_order": [
+          "16156833703d113e65-0"
+        ],
+        "settings": {}
       }
     },
     "content_for_index": [
       "slideshow",
       "1615254699d28e793e",
+      "1615683283b307b0cf",
       "1615652108729d83a2",
+      "16156833703d113e65",
       "161525492068e8a435",
       "newsletter"
     ]
