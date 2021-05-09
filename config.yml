@@ -1,9 +1,0 @@
-development:
-  password: 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
-  theme_id: "120546885841"
-  store: mardeloto.myshopify.com
-
-live:
-  password: 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
-  theme_id: "120544461009"
-  store: mardeloto.myshopify.com
